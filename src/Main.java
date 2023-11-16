@@ -23,16 +23,15 @@ public class Main implements KeyListener{
         frame.setVisible(true);
         Graphics g = panel.getGraphics();
         
-
-
+        
         char opcao;
         double total = 0;
-       
+
 
         Gasto gasto = new Gasto();
         Ganhos ganhos = new Ganhos();
-        g.setFont(new Font("serif", Font.BOLD, 20));
-        g.drawString("Pressione G para registrar um ganho e H para registrar um gasto", 10, 10);
+        g.setFont(new Font("serif", Font.BOLD, 10));
+        g.drawString("Pressione G para ganho e H para gasto", 10, 30);
         opcao = scanner.nextLine().charAt(0);
          
         if (opcao == 'g') {
@@ -74,9 +73,9 @@ public class Main implements KeyListener{
     public void keyPressed(KeyEvent e) {
         int keyCode = e.getKeyCode();
         if(keyCode == KeyEvent.VK_G) {
-            ganhos.setBotãoGanho(true);
+
         }else if(keyCode == KeyEvent.VK_H) {
-            gasto.setBotãoGasto(true);
+
         }
 
 
