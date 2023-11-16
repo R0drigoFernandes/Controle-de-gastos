@@ -1,7 +1,7 @@
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.Scanner;
-
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.Font;
@@ -17,11 +17,18 @@ public class Main implements KeyListener{
         Scanner scanner = new Scanner(System.in);
         JFrame frame = new JFrame("Controle de gastos");
         frame.setVisible(true);
-        frame.setSize(500, 500);
+        frame.setSize(800, 800);
         frame.addKeyListener(new Main());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
+        frame.setLayout(null);
+        JButton botãoGasto = new JButton("Gasto");
+        JButton botãoGanho = new JButton("Ganho");
+        botãoGanho.setBounds(100, 100, 100, 70);
+        botãoGasto.setBounds(200, 100, 100, 70);
+        frame.add(botãoGasto);
+        frame.add(botãoGanho);
 
 
 
