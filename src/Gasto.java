@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Gasto extends Main {
+public class Gasto extends ControleDeGastos {
     Scanner scanner = new Scanner(System.in);
     
     private double gasto;

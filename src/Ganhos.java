@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ganhos extends Main {
+public class Ganhos extends ControleDeGastos {
     Scanner scanner = new Scanner(System.in);
 private double ganhos;
 private String nomeDoGanho;
