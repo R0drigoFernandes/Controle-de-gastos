@@ -12,26 +12,27 @@ public class Main implements KeyListener{
 
 
     public static void main(String[] args) {
-        
+
+
         Scanner scanner = new Scanner(System.in);
-        JFrame frame = new JFrame();
+        JFrame frame = new JFrame("Controle de gastos");
+        frame.setVisible(true);
+        frame.setSize(500, 500);
         frame.addKeyListener(new Main());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel panel = new JPanel();
-        frame.add(panel);
-        frame.setSize(500, 500);
-        frame.setVisible(true);
-        Graphics g = panel.getGraphics();
-        
-        
+        frame.setResizable(false);
+        frame.setLocationRelativeTo(null);
+
+
+
         char opcao;
         double total = 0;
 
 
         Gasto gasto = new Gasto();
         Ganhos ganhos = new Ganhos();
-        g.setFont(new Font("serif", Font.BOLD, 10));
-        g.drawString("Pressione G para ganho e H para gasto", 10, 30);
+
+
         opcao = scanner.nextLine().charAt(0);
          
         if (opcao == 'g') {
