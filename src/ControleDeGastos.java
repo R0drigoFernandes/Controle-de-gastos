@@ -18,7 +18,7 @@ public static void main(String[] args){
        
         JFrame frame = new JFrame("Controle de gastos");
            frame.setVisible(true);
-           frame.setSize(800, 800);
+           frame.setSize(500, 500);
            frame.getContentPane().setBackground(Color.white);
            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
            frame.setResizable(false);
@@ -26,8 +26,8 @@ public static void main(String[] args){
            frame.setLayout(null);
            JButton botãoGasto = new JButton("Gasto");
            JButton botãoGanho = new JButton("Ganho");
-           botãoGanho.setBounds(300, 400, 100, 70);
-           botãoGasto.setBounds(400, 400, 100, 70);
+           botãoGanho.setBounds(300, 380, 100, 70);
+           botãoGasto.setBounds(100, 380, 100, 70);
            Font font = new Font("Arial", Font.BOLD, 20);
            botãoGanho.setFont(font);
            botãoGasto.setFont(font);
@@ -38,15 +38,8 @@ public static void main(String[] args){
            frame.add(botãoGasto);
            frame.add(botãoGanho);
 
-
-
-
-
-
         char opcao;
         double total = 0;
-
-
         Gasto gasto = new Gasto();
         Ganhos ganhos = new Ganhos();
 
