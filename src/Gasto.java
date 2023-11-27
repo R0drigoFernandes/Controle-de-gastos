@@ -5,7 +5,7 @@ public class Gasto extends screen {
     
     private double gasto;
     private String nomeDoGasto;
-    private boolean botãoGasto;
+    
     
 
     

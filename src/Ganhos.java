@@ -3,7 +3,7 @@ public class Ganhos extends screen {
     Scanner scanner = new Scanner(System.in);
 private double ganhos;
 private String nomeDoGanho;
-private boolean botãoGanho;
+
 
  
     public void setGanhos(double ganhos){

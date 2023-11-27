@@ -10,12 +10,12 @@ import javax.swing.JOptionPane;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
-public class ControleDeGastos {
+public class ControleDeGastos{
 
 public static void main(String[] args){
     
         Scanner scanner = new Scanner(System.in);
-       JOptionPane jOptionPane = new JOptionPane();
+       
       
         
         screen screen = new screen();
