@@ -14,16 +14,27 @@ public class ControleDeGastos{
 
 public static void main(String[] args){
     
-        Scanner scanner = new Scanner(System.in);
+        
        
       
         
         screen screen = new screen();
 
-        screen.screen();
+         while (true) { 
+           screen.screen();
+           
+           try {
+               Thread.sleep(1000);
+           } catch (Exception e) {
+            e.printStackTrace();
+
+           }
+           
+        }
         
-        scanner.close();
+        
     }
+    
     
     
 

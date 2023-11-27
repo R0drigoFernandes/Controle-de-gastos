@@ -24,6 +24,10 @@ public class screen implements ActionListener{
                label1.setBounds(100, 20, 300, 50);
                label1.setFont(new Font("Arial", Font.BOLD, 30));
                frame.add(label1);
+               JLabel label2 = new JLabel();
+               label2.setText("Total:  " + total.getTotal());
+               label2.setBounds(100, 100, 100, 70);
+               frame.add(label2);
                JButton botãoGasto = new JButton("Gasto");
                JButton botãoGanho = new JButton("Ganho");
                botãoGanho.setBounds(300, 380, 100, 70);
@@ -40,6 +44,7 @@ public class screen implements ActionListener{
 
                botãoGanho.addActionListener(this);
                botãoGasto.addActionListener(this:: gasto);
+               
                
 
 

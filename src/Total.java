@@ -1,6 +1,6 @@
 
 public class Total {
-    private double total = 0;
+    private double total;
     
   public double getTotal(){
       return total;
