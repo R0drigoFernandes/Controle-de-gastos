@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Gasto extends ControleDeGastos {
+public class Gasto extends screen {
     Scanner scanner = new Scanner(System.in);
     
     private double gasto;
@@ -8,13 +8,7 @@ public class Gasto extends ControleDeGastos {
     private boolean botãoGasto;
     
 
-    public boolean isBotãoGasto() {
-        return botãoGasto;
-    }
-
-    public void setBotãoGasto(boolean botãoGasto) {
-        this.botãoGasto = botãoGasto;
-    }
+    
 
     public void setGasto(double gasto){
         
@@ -32,14 +26,6 @@ public class Gasto extends ControleDeGastos {
     public void setNomeDoGasto(String nomeDoGasto) {
         this.nomeDoGasto = nomeDoGasto;
     }
-    public void gasto(){
-        System.out.println("Qual o nome do gasto?");
-            setNomeDoGasto(scanner.nextLine());
-            System.out.println("Qual o valor de gasto?");
-            setGasto(scanner.nextDouble());
-            System.out.println("O gasto" + getNomeDoGasto() + " foi de: " + getGasto());
-            
-            
-    }
+   
     
 }

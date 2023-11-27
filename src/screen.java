@@ -11,7 +11,10 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 public class screen extends JPanel implements ActionListener{
+             private String gastos, nomeDoGasto, nomeDoGanho, ganho;
+            
         public void screen(){
+               
                 JFrame frame = new JFrame("Controle de gastos");
                frame.setVisible(true);
                frame.setSize(500, 500);
@@ -36,23 +39,45 @@ public class screen extends JPanel implements ActionListener{
 
                botãoGanho.addActionListener(this);
                botãoGasto.addActionListener(this:: gasto);
+
+                
+             
     
              
     
         }
 
-        private void gasto(ActionEvent actionEvent) {
-            JOptionPane.showMessageDialog(null, "Gasto");
+        public void gasto(ActionEvent actionEvent) {
+             nomeDoGasto = JOptionPane.showInputDialog("Qual o nome do gasto?");
+             gastos = JOptionPane.showInputDialog("Qual o valor de gasto?");
+                Gasto gasto = new Gasto();
+             gasto.setGasto(Double.parseDouble(gastos));
+
+             JOptionPane.showMessageDialog(null, "Seu gasto com " + nomeDoGasto + " foi de: " + gasto.getGasto() + " reais");
+
+            
+
+            
         }
     
         @Override
         public void actionPerformed(ActionEvent e) {
             
-            
-                JOptionPane.showMessageDialog(null, "Ganho");
-            
-           
+             nomeDoGanho = JOptionPane.showInputDialog("Qual o nome do ganho?");
+             ganho = JOptionPane.showInputDialog("Qual o valor de ganho?");
+                Ganhos ganhos = new Ganhos();
+             ganhos.setGanhos(Double.parseDouble(ganho));
+
+             JOptionPane.showMessageDialog(null, "Seu ganho com " + nomeDoGanho + " foi de: " + ganhos.getGanhos() + " reais");
+             
+
+             
+        
             
         }
+
+        
+
+        
         
     }
