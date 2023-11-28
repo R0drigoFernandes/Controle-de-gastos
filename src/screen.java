@@ -12,6 +12,7 @@ public class screen implements ActionListener{
              private String gastos, nomeDoGasto, nomeDoGanho, ganho;
              Total total = new Total();
              JFrame frame = new JFrame("Controle de gastos");
+             
         public void screen(){
                frame.setVisible(true);
                frame.setSize(500, 500);

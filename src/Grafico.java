@@ -1,19 +1,15 @@
 import java.awt.Graphics;
 import java.awt.Color;
 public class Grafico {
-    double x , y;
     
-    public Grafico(double x , double y) {
-        this.x = x;
-        this.y = y;
-    
-    }
-    public void grafico(Graphics g) {
-    
+    public void drawArc(int x , int y, int width, int height, int startAngle, int arcAngle){
+        Graphics g = null;
+            
+        
+        g.setColor(Color.WHITE);
+        g.drawRect(100, 150, 50, 50);
         g.setColor(Color.GREEN);
-        g.fillRect(100, 300 , 20, (int) (y - x));
-
-
-
+        g.drawArc(x, y, width, height, startAngle, arcAngle);
+        g.fillArc(x, y, width, height, startAngle, arcAngle);
     }
 }
