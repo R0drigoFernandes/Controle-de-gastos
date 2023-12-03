@@ -2,8 +2,6 @@
 public class ControleDeGastos{
 
 public static void main(String[] args){
-        Total total = new Total();
-        Gasto gasto = new Gasto();
         screen screen = new screen();
         Grafico grafico = new Grafico();
         
@@ -13,13 +11,8 @@ public static void main(String[] args){
             
             screen.screen();
             grafico.grafico(screen.frame.getGraphics());
-                if(total.getTotal() > 0){
-            grafico.anguloGreen = 360;
-
-        }
-        if(gasto.getGasto() > 0){
-            grafico.anguloRed = (int) (gasto.getGasto() * 3.6);
-        }
+            
+           
             
             
             try {

@@ -81,7 +81,7 @@ public class screen implements ActionListener{
 
              JOptionPane.showMessageDialog(null, "Seu ganho com " + nomeDoGanho + " foi de: " + ganhos.getGanhos() + " reais");
              
-             total.setTotal(total.getTotal() + ganhos.getGanhos());
+             total.setTotal(ganhos.getGanhos());
              
                
                
