@@ -9,16 +9,17 @@ public static void main(String[] args){
         
 
         while (true) { 
-            if(total.getTotal() > 0){
+        
+            
+            screen.screen();
+            grafico.grafico(screen.frame.getGraphics());
+                if(total.getTotal() > 0){
             grafico.anguloGreen = 360;
 
         }
         if(gasto.getGasto() > 0){
             grafico.anguloRed = (int) (gasto.getGasto() * 3.6);
         }
-            
-            screen.screen();
-            grafico.grafico(screen.frame.getGraphics());
             
             
             try {
