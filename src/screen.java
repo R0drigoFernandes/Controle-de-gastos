@@ -15,7 +15,7 @@ public class screen implements ActionListener{
              
         public void screen(){
                frame.setVisible(true);
-               frame.setSize(1600, 900);
+               frame.setSize(500, 500);
                frame.getContentPane().setBackground(Color.white);
                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                frame.setResizable(false);

@@ -12,7 +12,7 @@ public static void main(String[] args){
         
             
             screen.screen();
-            grafico.grafico(250, 250, 360, ganhos.getGanhos(), gasto.getGasto());
+            grafico.grafico(250, 250, 60, ganhos.getGanhos(), gasto.getGasto());
             grafico.drawPieChart(screen.frame.getGraphics());
            
             
