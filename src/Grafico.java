@@ -26,7 +26,7 @@ public class Grafico {
 public void drawPieChart(Graphics g) {
     int gastosAngle = (int) Math.round((gastos / total) * 360);
     int economiaAngle = 360 - gastosAngle;
-
+   
     // Define a cor dos gastos
     g.setColor(new Color(255, 0, 0));
     g.fillArc(centerX - radius, centerY - radius, 2 * radius, 2 * radius, 0, gastosAngle);

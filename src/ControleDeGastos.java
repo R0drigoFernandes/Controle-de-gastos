@@ -1,37 +1,31 @@
-import javax.swing.SwingUtilities;
 
-public class ControleDeGastos{
+import java.awt.Canvas;
 
-public static void main(String[] args){
-        screen screen = new screen();
+public class ControleDeGastos extends Canvas implements Runnable {
+    
+ screen screen = new screen();
         Grafico grafico = new Grafico();
         Ganhos ganhos = new Ganhos();
         Gasto gasto = new Gasto();
-
+    @Override
+    public void run() {
         while (true) { 
-        
-            
             screen.screen();
             grafico.grafico(250, 250, 60, ganhos.getGanhos(), gasto.getGasto());
             grafico.drawPieChart(screen.frame.getGraphics());
-           
-            
-            
             try {
-                Thread.sleep(1000/120);
+                Thread.sleep(1000/60);
             } catch (Exception e) {
              e.printStackTrace();
  
             }
-        
             
          }
-         
-         
-        
-        
-           
-        
+    }
+
+public static void main(String[] args) throws Exception {
+    new Thread(new ControleDeGastos()).start();
+       
         
         
     }
