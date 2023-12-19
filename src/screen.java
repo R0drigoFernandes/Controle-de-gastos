@@ -10,12 +10,14 @@ import javax.swing.JLabel;
 
 public class screen implements ActionListener{
              private String gastos, nomeDoGasto, nomeDoGanho, ganho;
+             public int wight = 500, height = 500;
+             
              Total total = new Total();
              JFrame frame = new JFrame("Controle de gastos");
              
-        public void screen(){
+        public void initializescreen(){
                frame.setVisible(true);
-               frame.setSize(500, 500);
+               frame.setSize(wight, height);
                frame.getContentPane().setBackground(Color.WHITE);
                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                frame.setResizable(false);

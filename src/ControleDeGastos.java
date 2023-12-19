@@ -10,7 +10,7 @@ public class ControleDeGastos extends Canvas implements Runnable {
     @Override
     public void run() {
         while (true) { 
-            screen.screen();
+            screen.initializescreen();
             grafico.grafico(250, 200, 60, ganhos.getGanhos(), gasto.getGasto());
             grafico.drawPieChart(screen.frame.getGraphics());
             try {
@@ -39,4 +39,3 @@ public static void main(String[] args) throws Exception {
 
 
     
-
