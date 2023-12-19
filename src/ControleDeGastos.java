@@ -11,7 +11,7 @@ public class ControleDeGastos extends Canvas implements Runnable {
     public void run() {
         while (true) { 
             screen.screen();
-            grafico.grafico(250, 250, 60, ganhos.getGanhos(), gasto.getGasto());
+            grafico.grafico(250, 200, 60, ganhos.getGanhos(), gasto.getGasto());
             grafico.drawPieChart(screen.frame.getGraphics());
             try {
                 Thread.sleep(1000/60);
